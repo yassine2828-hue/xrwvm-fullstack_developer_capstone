@@ -1,0 +1,81 @@
+<section id="contact">
+    <style>
+        #contact {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        #contact h2 {
+            text-align: center;
+            color: #00ced1;
+            border-bottom: 2px solid #00ced1;
+            padding-bottom: 10px;
+        }
+
+        .contact-info {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #00ced1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #00a8ab;
+        }
+    </style>
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+        <p><strong>Dealerships Inc.</strong></p>
+        <p>1234 Auto Boulevard<br>Los Angeles, CA 90001</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: info@dealerships.com</p>
+    </div>
+
+    <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
