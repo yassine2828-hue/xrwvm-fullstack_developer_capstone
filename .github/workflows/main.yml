@@ -31,7 +31,7 @@ jobs:
     - name: Run Linter
       run: |
         pwd
-        find . -name "*.py" -exec flake8 {} +
+        find . -name "*.py" -not -path "./server/database/node_modules/*" -exec flake8 {} +
         echo "Linted all the python files successfully"
 
   lint_js:
@@ -52,5 +52,5 @@ jobs:
 
     - name: Run Linter
       run: |
-        find ./server/database -name "*.js" -exec jshint {} +
+        find ./server/database -name "*.js" -not -path "./server/database/node_modules/*" -exec jshint {} +
         echo "Linted all the js files successfully"
