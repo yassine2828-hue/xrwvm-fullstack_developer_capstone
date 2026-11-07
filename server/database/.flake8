@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 120
+ignore = E128,E131,E203,E225,E226,E251,E261,E265,E275,E303,E712,E722,W191,W292,W391
+per-file-ignores =
+    */migrations/*:E501
+    */populate.py:E501
